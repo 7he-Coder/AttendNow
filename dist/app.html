@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- fontfamily -->
+  <link href="https://db.onlinewebfonts.com/c/7fdb09ff5a96f39768f311d5471d68a9?family=FuturaLig" rel="stylesheet">
+  <link href="https://db.onlinewebfonts.com/c/fd6e6c30c7d355528ba9428eea942445?family=Futura+Book" rel="stylesheet">
+  <link href="https://db.onlinewebfonts.com/c/77d394fa0c1103c648f880b77cb4a32f?family=Futura+LT+W01+Medium"
+    rel="stylesheet">
+
+  <title>AttendNow</title>
+  <link rel="stylesheet" href="./style.css">
+
+  <!-- Font Awesome CDN link  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link href="dist/hamburgers.css" rel="stylesheet">
+</head>
+
+<body class="font-futura scroll-smooth">
+  <div class="app-container">
+
+    <!-- =======================
+    *** Header/Navbar Section ***
+    ======================== -->
+    <header id="home" class="w-full h-[97px] sticky top-0 left-0 z-[9999999] drop-shadow-lg bg-headerBgcolor">
+      <div
+        class="w-full xl:max-w-7xl 2xl:max-w-full mx-auto py-2 px-4 md:px-8 2xl:px-10 flex justify-between items-center">
+        <div class="logo flex items-center justify-start cursor-pointer">
+          <div>
+            <svg preserveAspectRatio="xMidYMid meet" data-bbox="0 0 142 85" viewBox="0 0 142 85" height="85" width="70"
+              xmlns="http://www.w3.org/2000/svg" data-type="color" role="img" aria-label="AttendNow">
+              <g>
+                <path fill="#4329ba"
+                  d="M86 42.5C86 65.972 66.748 85 43 85S0 65.972 0 42.5 19.252 0 43 0s43 19.028 43 42.5z"
+                  data-color="1"></path>
+                <path fill="#ac3cf7"
+                  d="M142 42.298c0 23.36-18.937 42.298-42.298 42.298-23.36 0-42.298-18.937-42.298-42.298C57.404 18.938 76.341 0 99.702 0 123.062 0 142 18.937 142 42.298z"
+                  data-color="2"></path>
+                <path fill="#ffffff"
+                  d="M81.404 39.968 95.656 54.22a3.848 3.848 0 1 1-5.442 5.442L75.963 45.41a3.848 3.848 0 1 1 5.442-5.442z"
+                  data-color="3"></path>
+                <path fill="#ffffff"
+                  d="M124.44 30.855 95.678 59.62a3.848 3.848 0 1 1-5.442-5.442L119 25.413a3.848 3.848 0 1 1 5.442 5.442z"
+                  data-color="3"></path>
+              </g>
+            </svg>
+          </div>
+          <div class="text-paraTextxl ml-3">
+            <h2 class="text-white font-futuraBk text-xl md:text-2xl tracking-wide"><a
+                href="../dist/app.html">AttendNow</a></h2>
+          </div>
+        </div>
+
+        <nav class="flex items-center justify-center">
+          <div class="hidden lg:block">
+            <div class="flex items-center justify-center">
+              <ul
+                class="navbar mr-16 lg:mr-4 min-[1285px]:mr-16 flex text-white min-[1024px]:text-base min-[1040px]:text-paraTextmd min-[1070px]:text-lg font-futuraBk font-medium tracking-tight place-items-center">
+                <li class="navList ">
+                  <a class="navItem py-4 px-2 mx-[.1rem] xl:mx-[.55rem] hover:text-gray-300 duration-150 ease-linear cursor-pointer"
+                    href="https://github.com/7he-Coder" target="_blank">Home</a>
+                </li>
+                <li class="navList">
+                  <a class="navItem py-4 px-2 mx-[.1rem] xl:mx-[.55rem] hover:text-gray-300 duration-150 ease-linear cursor-pointer text-center"
+                    href="#attendNow">Why AttendNow</a>
+                </li>
+                <li class="navList">
+                  <a class="navItem py-4 px-2 mx-[.1rem] xl:mx-[.55rem] hover:text-gray-300 duration-150 ease-linear cursor-pointer"
+                    href="#benefit">Benefits</a>
+                </li>
+                <li class="navList">
+                  <a class="navItem py-4 px-2 mx-[.1rem] xl:mx-[.55rem] hover:text-gray-300 duration-150 ease-linear cursor-pointer"
+                    href="#review">Reviews</a>
+                </li>
+                <li class="navList">
+                  <a class="navItem py-4 px-2 mx-[.1rem] xl:mx-[.55rem] hover:text-gray-300 duration-150 ease-linear cursor-pointer"
+                    href="#price">Pricing</a>
+                </li>
+                <li class="navList">
+                  <a class="navItem py-4 px-2 mx-[.1rem] xl:mx-[.55rem] hover:text-gray-300 duration-150 ease-linear cursor-pointer"
+                    href="./Blog/blog.html">Blog</a>
+                </li>
+                <li class="navList">
+                  <a class="navItem py-4 px-2 mx-[.1rem] xl:mx-[.55rem] hover:text-gray-300 duration-150 ease-linear cursor-pointer text-center"
+                    href="./ReqADemo/reqaDemo.html">Request
+                    a Demo</a>
+                </li>
+                <li class="navList">
+                  <a class="navItem py-4 lg:text-center mx-[.55rem] hover:text-gray-300 duration-150 ease-linear cursor-pointer"
+                    href="./LogIn/login.html" target="_blank">Login</a>
+                </li>
+              </ul>
+              <form
+                class="group w-[150px] max-w-sm bg-countryBtn outline-none font-futuraBk rounded-lg inline-flex cursor-pointer">
+                <select id="dropdownDividerButton" data-dropdown-toggle="dropdownDivider"
+                  class="bg-countryBtn text-white text-base px-1 ml-5 py-2 outline-none border-none appearance-none cursor-pointer">
+
+                  <option value="English" selected>English</option>
+                  <option value="العربية">العربية</option>
+                  <option value="বাংলা">বাংলা</option>
+                  <option value="Español">Español</option>
+                  <option value="Français">Français</option>
+                  <option value="ગુજરાતી">ગુજરાતી</option>
+                  <option value="हिन्दी">हिन्दी</option>
+                  <option value="ಕನ್ನಡ">ಕನ್ನಡ</option>
+                  <option value="മലയാളം">മലയാളം</option>
+                  <option value="मराठी">मराठी</option>
+                  <option value="ਪੰਜਾਬੀ">ਪੰਜਾਬੀ</option>
+                  <option value="Português">Português</option>
+                  <option value="Русский">Русский</option>
+                  <option value="தமிழ்">தமிழ்</option>
+                  <option value="తెలుగు">తెలుగు</option>
+                  <option value="اردو">اردو</option>
+                </select>
+
+                <span class="duration-500 ease-in-out group-hover:rotate-180">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                    class="w-[16px] h-[16px] fill-white mt-3">
+                    <path
+                      d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
+                  </svg>
+                </span>
+
+              </form>
+            </div>
+          </div>
+
+          <!-- *** drop down menu *** -->
+          <div class="block lg:hidden">
+            <div class="text-3xl text-white">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- =======================
+    *** Main/Hero Section ***
+    ======================== -->
+    <main class="bg-heroGradient">
+      <div
+        class="w-full xl:max-w-7xl 2xl:max-w-full mx-auto py-28 px-6 md:px-16 2xl:px-28 block lg:flex md:flex-row-reverse items-center justify-between">
+        <!-- Right Side -->
+        <div class="lg:mb-0 mb-14">
+          <center>
+            <img class="shrink-0" src="./assets/AttendNow.png" alt="">
+          </center>
+        </div>
+
+        <!-- Left Side -->
+        <div class="place-items-center">
+          <div class="lg:max-w-2xl mx-auto">
+            <h1 class="text-6xl text-pretty text-white font-futuraBk leading-tight">
+              Attendance simplified, <br> anywhere anytime
+            </h1>
+            <div class="tracking-wide px-8 md:px-12 mb-6 py-10">
+              <ul class="text-white text-2xl font-futuraLg list-disc">
+                <li>Mark Attendance with Geotagging</li>
+                <li class="py-2">Location Tracking</li>
+                <li>Geofencing</li>
+                <li class="py-2">Leave Management</li>
+                <li>Multi-lingual</li>
+              </ul>
+            </div>
+            <div class="w-full">
+              <a class="px-14 py-3 font-sans text-xl tracking-tight rounded-full hover:bg-heroGradient duration-200 ease-linear border-2 border-white text-white hover:text-white  bg-heroBtn"
+                href="./ReqADemo/reqaDemo.html">Request a Demo</a>
+            </div>
+
+            <div class="text-white py-4 mt-6">
+              <span class="text-2xl">Try it yourself. Download now.</span>
+            </div>
+
+            <div class="block md:flex">
+              <img class="mr-5 mb-2 md:mb-0 cursor-pointer"
+                src="https://static.wixstatic.com/media/84770f_eb358dba3c764099b17fd5241d42c715~mv2.png/v1/fill/w_137,h_41,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Download_on_the_App_Store_Badge.png"
+                alt="">
+              <img class="cursor-pointer"
+                src="https://static.wixstatic.com/media/84770f_75b1345329464348876e3c99f0c1833f~mv2.png/v1/fill/w_140,h_41,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Google_Play_Store_badge_EN.png"
+                alt="">
+            </div>
+          </div>
+        </div>
+        <!-- mobile size  -->
+        <!-- <div class="leftSide px-4 w-full relative block md:hidden ">
+        <center>
+          <h1 class="text-[1.7rem] w-full max-w-[23rem] mx-auto text-balance ">
+            Employee Attendance & Location Tracking Simplified
+          </h1>
+          <p class="w-full max-w-[23rem] mx-auto text-[#9757bf] font-semibold text-xl tracking-tight py-1">just one
+            click away</p>
+
+          <div class="formField mt-6">
+            <div class="w-full h-full">
+              <input
+                class="w-full max-w-[24rem] h-[2.9rem] outline-none border-[1.7px] text-xl font-light text-black placeholder-black px-4 tracking-tighter"
+                type="text" name="text" id="text" placeholder="Company Name">
+            </div>
+            <div class="w-full h-full py-8">
+              <input
+                class="w-full max-w-[24rem] h-[2.9rem] outline-none border-[1.7px] text-xl font-light text-black placeholder-black px-4 tracking-tighter"
+                type="text" name="text" id="text" placeholder="Account Owner / Admin Name">
+            </div>
+            <div class="w-full h-full">
+              <input
+                class="w-full max-w-[24rem] h-[2.9rem] outline-none border-[1.7px] text-xl font-light text-black placeholder-black px-4 tracking-tighter"
+                type="text" name="text" id="text" inputmode="numeric" placeholder="Mobile No">
+            </div>
+            <div class="w-full h-full py-8">
+              <input
+                class="w-full max-w-[24rem] h-[2.9rem] outline-none border-[1.7px] text-xl font-light text-black placeholder-black px-4 tracking-tighter"
+                type="email" name="email" id="text" placeholder="Email">
+            </div>
+            <div class="w-full h-full">
+              <input
+                class="w-full max-w-[24rem] h-[2.9rem] outline-none border-[1.7px] text-xl font-light text-black placeholder-black px-4 tracking-tighter"
+                type="text" name="text" id="text" placeholder="Company Address">
+            </div>
+            <div class="w-full h-full py-8">
+              <input
+                class="w-full max-w-[24rem] h-[2.9rem] outline-none border-[1.7px] text-xl font-light text-black placeholder-black px-4 tracking-tighter"
+                type="text" name="text" id="text" placeholder="Employee Size">
+            </div>
+            <div class="w-full h-full">
+              <input
+                class="w-full max-w-[24rem] h-[2.9rem] outline-none border-[1.7px] text-xl font-light text-black placeholder-black px-4 tracking-tighter"
+                type="text" name="text" id="text" placeholder="Desgination">
+            </div>
+            <div class="w-full max-w-[24rem] h-full py-8">
+              <button
+                class="w-full max-w-[24rem] h-[2.6rem] text-xl font-normal text-white bg-[#6e54c5] hover:bg-white hover:text-[#5e4c9c] duration-150 ease-in border-2 border-[#6e54c5] px-4 tracking-tighter"
+                type="submit">
+                Sign Me Up
+              </button>
+            </div>
+          </div>
+        </center>
+      </div> -->
+    </main>
+
+    <!-- =======================
+    *** Branding Section ***
+    ======================== -->
+    <section class="w-full xl:max-w-7xl 2xl:max-w-full mx-auto py-16 px-6 md:px-16 2xl:px-28">
+      <div class="place-items-center mb-10">
+        <h2 class="text-xl font-futuraBk">OUR CLIENTS</h2>
+        <!-- <span class="border-b bg-heroGradient p-[1px] w-[8%]"></span> flex flex-col-->
+      </div>
+
+      <div class="flex justify-between items-center">
+        <div class="imgs mix-blend-color-burn">
+          <img src="./assets/clients_images/img-1.jpg" alt="">
+        </div>
+        <div class="imgs mix-blend-color-burn">
+          <img src="./assets/clients_images/img-2.jpg" alt="">
+        </div>
+        <div class="imgs mix-blend-color-burn">
+          <img src="./assets/clients_images/img-3.jpg" alt="">
+        </div>
+        <div class="imgs mix-blend-color-burn">
+          <img src="./assets/clients_images/img-4.jpg" alt="">
+        </div>
+        <div class="imgs mix-blend-color-burn">
+          <img src="./assets/clients_images/img-5.jpg" alt="">
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================
+    *** About Section ***
+    ======================== -->
+    <section id="attendNow" class="bg-aboutPrice">
+      <div
+        class="w-full xl:max-w-7xl 2xl:max-w-full mx-auto py-28 px-6 md:px-16 2xl:px-28 block md:flex justify-between items-center">
+        <h1
+          class="size-full md:w-[482px] md:h-auto mb-8 md:mb-0 font-futuraBk text-4xl md:text-5xl md:leading-snug lg:leading-normal text-pretty md:text-balance">
+          Reinventing Employee Attendance with Location Tracking
+        </h1>
+
+        <p class="text-lg font-futuraMd text-gray-700 font-semibold tracking-wider text-start md:text-justify leading-loose 
+          w-full h-auto md:w-[600px]">
+          With GPS technology, employers can track their employees in real-time, identify their location, monitor
+          their movement, and track their arrival and departure times from any location. GPS technology can also be
+          used to generate automatic attendance records, determine if employees are taking the most effective route to
+          their destination, and ensure their safety while on the job. AttendNow provides all of the above even when
+          the users have poor or no network and integrates with payroll and leave management.
+        </p>
+      </div>
+    </section>
+
+    <!-- =======================
+    *** Benefits Section ***
+    ======================== -->
+    <section id="benefit" style="background: url('./assets/bg.jpg') no-repeat center center/cover">
+      <div class="w-full xl:max-w-7xl 2xl:max-w-full mx-auto py-16 px-6 md:px-16 2xl:px-28">
+        <div class="mb-24 text-center max-w-md mx-auto">
+          <h1 class="text-4xl md:text-5xl text-white leading-snug font-light">
+            How AttendNow can help your business</h1>
+        </div>
+
+        <!-- boxes -->
+        <div class="grid place-items-center grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-y-8">
+          <div class="box-1 w-[285px] h-[292.5px] bg-[#cec6e845] rounded-2xl">
+            <h1 class="text-justify text-2xl font-futuraBk tracking-tight max-w-[189.2px] px-4 py-6 text-white">
+              Attendance
+              with
+              Geotagging</h1>
+            <p class="text-lg px-4 leading-relaxed text-neutral-200">
+              Give flexibility to your sales reps to mark attendance from anywhere so that they can have more
+              meetings and generate more business for you.
+            </p>
+          </div>
+          <div class="box-1 w-[285px] h-[292.5px] bg-[#cec6e845] rounded-2xl">
+            <h1 class="w-min font-futuraBk text-2xl tracking-tighter max-w-[186.89px] px-4 py-6 text-white">Location
+              Tracking</h1>
+            <p class="text-justify text-lg px-4 leading-relaxed text-neutral-200">
+              Increase workforce efficiency by having better visibility and insights into what's happening on job.
+              Allocate resources more effectively and reduce travel costs.
+            </p>
+          </div>
+          <div class="box-1 w-[285px] h-[292.5px] bg-[#cec6e845] rounded-2xl">
+            <h1 class="w-min font-futuraBk text-2xl tracking-tighter max-w-[186.89px] px-4 py-6 text-white">Face
+              Recognition</h1>
+            <p class="text-justify text-lg px-4 leading-relaxed text-neutral-200">
+              Be rest assured that employees don't claim a colleague's attendance. Eliminate issues related to buddy
+              punching and get additional layer of security.
+            </p>
+          </div>
+          <div class="box-1 w-[285px] h-[292.5px] bg-[#cec6e845] rounded-2xl">
+            <h1 class="w-min font-futuraBk text-2xl tracking-tighter max-w-[186.89px] px-4 py-6 text-white">
+              Geofencing</h1>
+            <p class="text-justify text-lg px-4 leading-relaxed text-neutral-200">
+              Get accurate record of an employee's working hours, making it easier to analyze and identify patterns in
+              attendance. Get the exact location of employees entering or leaving the premises
+            </p>
+          </div>
+          <div class="box-1 w-[285px] h-[292.5px] bg-[#cec6e845] rounded-2xl">
+            <h1 class="w-min font-futuraBk text-2xl tracking-tighter max-w-[186.89px] px-4 py-6 text-white">
+              Leave Management</h1>
+            <p class="text-justify text-lg px-4 leading-relaxed text-neutral-200">
+              Reduce administration and paperwork enabling HR personnel to manage absences more efficiently. Improve
+              resources planning and reduce disruption
+            </p>
+          </div>
+          <div class="box-1 w-[285px] h-[292.5px] bg-[#cec6e845] rounded-2xl">
+            <h1 class="w-min font-futuraBk text-2xl tracking-tighter max-w-[186.89px] px-4 py-6 text-white">
+              Roster</h1>
+            <p class="text-justify text-lg px-4 leading-relaxed text-neutral-200">
+              Get better accuracy level than traditional methods. Employees no longer need to fill in a paper
+              timesheet, reducing the risk of errors. Increases productivity and focus resources on growth.
+            </p>
+          </div>
+          <div class="box-1 w-[285px] h-[292.5px] bg-[#cec6e845] rounded-2xl">
+            <h1 class="w-min font-futuraBk text-2xl tracking-tighter max-w-[186.89px] px-4 py-6 text-white">
+              Salary Calculation</h1>
+            <p class="text-justify text-lg px-4 leading-relaxed text-neutral-200">
+              Quickly and accurately calculate salaries and deductions, ensuring efficient use of resources and
+              improved employee satisfaction
+            </p>
+          </div>
+          <div class="box-1 w-[285px] h-[292.5px] bg-[#cec6e845] rounded-2xl">
+            <h1 class="w-min font-futuraBk text-2xl tracking-tighter max-w-[186.89px] px-4 py-6 text-white">Payslip
+              Generation</h1>
+            <p class="text-justify text-lg px-4 leading-relaxed text-neutral-200">
+              Eliminate the need for controller and HR staff to manually generate documents and calculations, reducing
+              the amount of administrative overhead.
+            </p>
+          </div>
+          <div class="box-1 w-[285px] h-[292.5px] bg-[#cec6e845] rounded-2xl">
+            <h1 class="font-futuraBk text-2xl tracking-tighter max-w-[189.2px] px-4 py-6 text-white">
+              Timesheet with Approvals</h1>
+            <p class="text-justify text-lg px-4 leading-relaxed text-neutral-200">
+              Encourage employees to stay focused and productive throughout their workdays. This results in increased
+              efficiency and a greater output from workers.
+            </p>
+          </div>
+          <div class="box-1 w-[285px] h-[292.5px] bg-[#cec6e845] rounded-2xl">
+            <h1 class="w-min font-futuraBk text-2xl tracking-tighter max-w-[186.89px] px-4 py-6 text-white">
+              Selfie Attendance</h1>
+            <p class="text-justify text-lg px-4 leading-relaxed text-neutral-200">
+              Selfies make attendance tracking is more secure, as only registered individuals can take attendance.
+              Photos look more human and are harder to manipulate.
+            </p>
+          </div>
+          <div class="box-1 w-[285px] h-[292.5px] bg-[#cec6e845] rounded-2xl">
+            <h1 class="w-min font-futuraBk text-2xl tracking-tighter max-w-[186.89px] px-4 py-6 text-white">Works
+              Offline</h1>
+            <p class="text-justify text-lg px-4 leading-relaxed text-neutral-200">
+              Be rest assured that your attendance records are kept safe and secure in remote areas having poor
+              network or no network at all. Get the same accuracy as that of online.
+            </p>
+          </div>
+          <div class="box-1 w-[285px] h-[292.5px] bg-[#cec6e845] rounded-2xl">
+            <h1 class="w-min font-futuraBk text-2xl tracking-tighter max-w-[186.89px] px-4 py-6 text-white">
+              Multilingual
+            </h1>
+            <p class="text-justify text-lg px-4 leading-relaxed text-neutral-200">
+              Employees no longer need to waste time trying to figure out how to use unfamiliar language to finish
+              their tasks quickly and efficiently. AttendNow currently supports English and Hindi. More languages
+              coming soon.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================
+    ***  Reviews Section ***
+    ======================== -->
+    <section id="review">
+      <div class="w-full xl:max-w-7xl 2xl:max-w-full mx-auto py-16 px-6 md:px-16 2xl:px-28">
+        <div class="mb-24 text-center max-w-md mx-auto">
+          <h2 class="text-4xl md:text-5xl text- leading-snug font-light">Satisfied Customers</h2>
+        </div>
+
+        <div class="mx-auto max-w-max block md:flex">
+          <div class="box-1 w-[346px] mx-0 md:mx-8 h-max px-6 py-5 shadow-2xl bg-white rounded-[2.5rem]">
+
+            <div class="">
+              <i class="fa-solid fa-quote-left text-[#9757bf] text-5xl"></i>
+            </div>
+
+            <p class="text-lg py-5 leading-loose font-futuraMd text-gray-500">
+              After comparing various apps, keeping in mind a variety of semi-smart phones, we implemented it across 14
+              very remote schools in the foothills of the Himalayas in Uttarakhand. Issues are intermittent cell
+              connections, poor signal strength and widely scattered locations. This app stores it's reporting data and
+              transmits automatically when sensing a connection. Geo-fencing based on job type etc. is excellent. After
+              one year, we have no reason to change. NO, it is not free, but an excellent app.
+            </p>
+
+            <div class="">
+              <h4 class="font-semibold tracking-tighter">Peter Tower</h4>
+              <div class="size-full mt-2">
+                <i class="fa-solid fa-star text-[#9757bf]"></i>
+                <i class="fa-solid fa-star text-[#9757bf]"></i>
+                <i class="fa-solid fa-star text-[#9757bf]"></i>
+                <i class="fa-solid fa-star text-[#9757bf]"></i>
+                <i class="fa-solid fa-star text-[#9757bf]"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="mx-auto w-max block mt-8 md:mt-0 xl:flex">
+            <div class="box-1 w-[346px] mr-0 lg:mr-8 h-max px-6 py-5 shadow-2xl bg-white rounded-[2.5rem]">
+
+              <div class="">
+                <i class="fa-solid fa-quote-left text-[#9757bf] text-5xl"></i>
+              </div>
+
+              <p class="text-lg py-5 leading-loose font-futuraMd text-gray-500">
+                Excellent performance application for all employees
+              </p>
+
+              <div class="">
+                <h4 class="font-semibold tracking-tighter">Amit Singh</h4>
+                <div class="size-full mt-2">
+                  <i class="fa-solid fa-star text-[#9757bf]"></i>
+                  <i class="fa-solid fa-star text-[#9757bf]"></i>
+                  <i class="fa-solid fa-star text-[#9757bf]"></i>
+                  <i class="fa-solid fa-star text-[#9757bf]"></i>
+                  <i class="fa-solid fa-star text-[#9757bf]"></i>
+                </div>
+              </div>
+            </div>
+            <div class="box-1 w-[346px] h-max xl:mt-0 mt-8 px-6 py-5 shadow-2xl bg-white rounded-[2.5rem]">
+
+              <div class="">
+                <i class="fa-solid fa-quote-left text-[#9757bf] text-5xl"></i>
+              </div>
+
+              <p class="text-lg py-5 leading-loose font-futuraMd text-gray-500">
+                The app is easy to access and also cost effect. The backend support is great. Go for it.
+              </p>
+
+              <div class="">
+                <h4 class="font-semibold tracking-tighter">Sunil Shinde</h4>
+                <div class="size-full mt-2">
+                  <i class="fa-solid fa-star text-[#9757bf]"></i>
+                  <i class="fa-solid fa-star text-[#9757bf]"></i>
+                  <i class="fa-solid fa-star text-[#9757bf]"></i>
+                  <i class="fa-solid fa-star text-[#9757bf]"></i>
+                  <i class="fa-solid fa-star text-[#9757bf]"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================
+    ***  Pricing Section ***
+    ======================== -->
+    <section id="price">
+      <div class="bg-aboutPrice w-full xl:max-w-7xl 2xl:max-w-full mx-auto py-16 px-6 md:px-16 2xl:px-28">
+        <div class="mb-24 text-center max-w-md mx-auto">
+          <h2 class="text-5xl md:text-5xl text- leading-snug font-light">Pricing Plans</h2>
+        </div>
+        <div class="mx-auto w-max block mt-8 md:mt-0 xl:flex place-items-center">
+          <div class="box-1 w-[363px] m-6 xl:mx-8 h-max px-7 py-10 shadow-2xl font-futuraMd text-gray-500 rounded-md">
+            <div class="text-center">
+              <h4 class="text-xl text-gray-900 font-futuraBk font-semibold tracking-[.4rem]">BASIC</h4>
+              <P class="text-paraTextmd font-futuraMd py-3 tracking-wide">Attendance</P>
+              <h3 class="text-2xl text-gray-800 mt-1 font-futuraBk font-semibold tracking-wide">₹ 75/user/month</h3>
+            </div>
+
+            <div class="py-8">
+              <li>
+                <span class="text-base tracking-tight py-5 leading-loose text-neutral-700">
+                  Attendance with Geo Tagging
+                </span>
+              </li>
+              <li>
+                <span class="text-base tracking-tight py-5 leading-loose text-neutral-700">
+                  Geofence
+                </span>
+              </li>
+              <li>
+                <span class="text-base tracking-tight py-5 leading-loose text-neutral-700">
+                  Payroll Calculation
+                </span>
+              </li>
+              <li>
+                <span class="text-base tracking-tight py-5 leading-loose text-neutral-700">
+                  Dynamic Work Calendar
+                </span>
+              </li>
+              <li>
+                <span class="text-base tracking-tight py-5 leading-loose text-neutral-700">
+                  Selfie Attendance
+                </span>
+              </li>
+              <li>
+                <span class="text-base tracking-tight py-5 leading-loose text-neutral-700">
+                  Multiple Punch in and Punch out
+                </span>
+              </li>
+              <li>
+                <span class="text-base tracking-tight py-5 leading-loose text-neutral-700">
+                  Work Offline
+                </span>
+              </li>
+              <li>
+                <span class="text-base tracking-tight py-5 leading-loose text-neutral-700">
+                  Roster Attendance
+                </span>
+              </li>
+              <li>
+                <span class="text-base tracking-tight py-5 leading-loose text-neutral-700">
+                  Overtime
+                </span>
+              </li>
+              <li>
+                <span class="text-base tracking-tight py-5 leading-loose text-neutral-700">
+                  Standard Salary Report
+                </span>
+              </li>
+              <li>
+                <span class="text-base tracking-tight py-5 leading-loose text-neutral-700">
+                  Holidays management
+                </span>
+              </li>
+            </div>
+
+            <div class="text-center mt-24">
+              <div class="">
+                <a href="#"
+                  class="font-semibold tracking-wide border-2 border-[#911dff] bg-white hover:bg-[#911dff] hover:text-white duration-150 ease-linear px-8 py-2 rounded-3xl">Request
+                  A Demo</a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="box-1 w-[363px] m-6 xl:mx-8 h-max px-7 py-10 shadow-2xl bg-white font-futuraMd text-gray-500 rounded-md">
+            <div class="text-center">
+              <h4 class="text-xl text-gray-900 font-futuraBk font-semibold tracking-[.4rem]">ADVANCED</h4>
+              <P class="text-paraTextmd font-futuraMd py-3 tracking-tight">Basic + Location Tracking & Timesheet
+              </P>
+              <h3 class="text-3xl mt-1 text-[#911dff] font-futuraBk font-bold tracking-tight">₹ 150/user/month</h3>
+            </div>
+
+            <div class="py-8">
+              <li>
+                <span class="text-base tracking-tight py-5 leading-loose text-neutral-700">
+                  Attendance with Geo Tagging
+                </span>
+              </li>
+              <li>
+                <span class="text-base tracking-tight py-5 leading-loose text-neutral-700">
+                  Geofence
+                </span>
+              </li>
+              <li>
+                <span class="text-base tracking-tight py-5 leading-loose text-neutral-700">
+                  Payroll Calculation
+                </span>
+              </li>
+              <li>
+                <span class="text-base tracking-tight py-5 leading-loose text-neutral-700">
+                  Dynamic Work Calendar
+                </span>
+              </li>
+              <li>
+                <span class="text-base tracking-tight py-5 leading-loose text-neutral-700">
+                  Selfie Attendance
+                </span>
+              </li>
+              <li>
+                <span class="text-base tracking-tight py-5 leading-loose text-neutral-700">
+                  Multiple Punch in and Punch out
+                </span>
+              </li>
+              <li>
+                <span class="text-base tracking-tight py-5 leading-loose text-neutral-700">
+                  Work Offline
+                </span>
+              </li>
+              <li>
+                <span class="text-base tracking-tight py-5 leading-loose text-neutral-700">
+                  Roster Attendance
+                </span>
+              </li>
+              <li>
+                <span class="text-base tracking-tight py-5 leading-loose text-neutral-700">
+                  Overtime
+                </span>
+              </li>
+              <li>
+                <span class="text-base tracking-tight py-5 leading-loose text-neutral-700">
+                  Standard Salary Report
+                </span>
+              </li>
+              <li>
+                <span class="text-base tracking-tight py-5 leading-loose text-neutral-700">
+                  Holidays management
+                </span>
+              </li>
+              <li>
+                <span class="text-base tracking-tight py-5 leading-loose text-neutral-700">
+                  Location Tracking
+                </span>
+              </li>
+              <li>
+                <span class="text-base tracking-tight py-5 leading-loose text-neutral-700">
+                  Distance Travelled Summary
+                </span>
+              </li>
+              <li>
+                <span class="text-base tracking-tight py-5 leading-loose text-neutral-700">
+                  Timesheet
+                </span>
+              </li>
+            </div>
+
+            <div class="text-center mt-auto xl:mt-16">
+              <div class="">
+                <a href="#"
+                  class="font-semibold tracking-wide border-2 border-[#911dff] hover:border-[1px] hover:ring-2 hover:ring-[#921dffe3] bg-[#911dff] text-white duration-150 ease-in px-8 py-2 rounded-3xl">Request
+                  A Demo</a>
+              </div>
+            </div>
+          </div>
+          <div class="box-1 w-[363px] m-6 xl:mx-8 h-max px-7 py-10 shadow-2xl font-futuraMd text-gray-500 rounded-md">
+            <div class="text-center">
+              <h4 class="text-xl text-gray-900 font-futuraBk font-semibold tracking-[.4rem]">ENTERPRISE</h4>
+              <P class="text-paraTextmd font-futuraMd py-3 tracking-wide">Advanced + Custom Forms + Support</P>
+              <h3 class="text-2xl text-gray-800 mt-1 font-futuraBk font-semibold tracking-wide">₹ 250/user/month</h3>
+            </div>
+
+            <div class="py-8">
+              <li>
+                <span class="text-base tracking-tight py-5 leading-[1.7rem] text-neutral-700">
+                  Attendance with Geo Tagging
+                </span>
+              </li>
+              <li>
+                <span class="text-base tracking-tight py-5 leading-[1.7rem] text-neutral-700">
+                  Geofence
+                </span>
+              </li>
+              <li>
+                <span class="text-base tracking-tight py-5 leading-[1.7rem] text-neutral-700">
+                  Payroll Calculation
+                </span>
+              </li>
+              <li>
+                <span class="text-base tracking-tight py-5 leading-[1.7rem] text-neutral-700">
+                  Dynamic Work Calendar
+                </span>
+              </li>
+              <li>
+                <span class="text-base tracking-tight py-5 leading-[1.7rem] text-neutral-700">
+                  Selfie Attendance
+                </span>
+              </li>
+              <li>
+                <span class="text-base tracking-tight py-5 leading-[1.7rem] text-neutral-700">
+                  Multiple Punch in and Punch out
+                </span>
+              </li>
+              <li>
+                <span class="text-base tracking-tight py-5 leading-[1.7rem] text-neutral-700">
+                  Work Offline
+                </span>
+              </li>
+              <li>
+                <span class="text-base tracking-tight py-5 leading-[1.7rem] text-neutral-700">
+                  Roster Attendance
+                </span>
+              </li>
+              <li>
+                <span class="text-base tracking-tight py-5 leading-[1.7rem] text-neutral-700">
+                  Overtime
+                </span>
+              </li>
+              <li>
+                <span class="text-base tracking-tight py-5 leading-[1.7rem] text-neutral-700">
+                  Standard Salary Report
+                </span>
+              </li>
+              <li>
+                <span class="text-base tracking-tight py-5 leading-[1.7rem] text-neutral-700">
+                  Holidays management
+                </span>
+              </li>
+              <li>
+                <span class="text-base tracking-tight py-5 leading-[1.7rem] text-neutral-700">
+                  Location Tracking
+                </span>
+              </li>
+              <li>
+                <span class="text-base tracking-tight py-5 leading-[1.7rem] text-neutral-700">
+                  Distance Travelled Summary
+                </span>
+              </li>
+              <li>
+                <span class="text-base tracking-tight py-5 leading-[1.7rem] text-neutral-700">
+                  Timesheet
+                </span>
+              </li>
+              <li>
+                <span class="text-base tracking-tight py-5 leading-[1.7rem] text-neutral-700">
+                  Custom Forms
+                </span>
+              </li>
+              <li>
+                <span class="text-base tracking-tight py-5 leading-[1.7rem] text-neutral-700">
+                  Dedicated Support
+                </span>
+              </li>
+            </div>
+
+            <div class="text-center">
+              <div class="">
+                <a href="#"
+                  class="font-semibold tracking-wide border-2 border-[#911dff] bg-white hover:bg-[#911dff] hover:text-white duration-150 ease-linear px-8 py-2 rounded-3xl">Request
+                  A Demo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================
+    ***  Footer Section ***
+    ======================== -->
+    <footer class="bg-white py-16">
+      <div class="w-full xl:max-w-7xl 2xl:max-w-full mx-auto grid grid-row-2 px-6 2xl:px-28">
+        <div class="grid sm:grid-cols-2 sm:py-10 py-8">
+          <div class="rightSide">
+            <div class="logo block md:flex">
+              <svg preserveAspectRatio="xMidYMid meet" data-bbox="0 0 142 85" viewBox="0 0 142 85" width="45"
+                xmlns="http://www.w3.org/2000/svg" data-type="color" role="img" aria-label="AttendNow">
+                <g>
+                  <path fill="#4329ba"
+                    d="M86 42.5C86 65.972 66.748 85 43 85S0 65.972 0 42.5 19.252 0 43 0s43 19.028 43 42.5z"
+                    data-color="1"></path>
+                  <path fill="#ac3cf7"
+                    d="M142 42.298c0 23.36-18.937 42.298-42.298 42.298-23.36 0-42.298-18.937-42.298-42.298C57.404 18.938 76.341 0 99.702 0 123.062 0 142 18.937 142 42.298z"
+                    data-color="2"></path>
+                  <path fill="#ffffff"
+                    d="M81.404 39.968 95.656 54.22a3.848 3.848 0 1 1-5.442 5.442L75.963 45.41a3.848 3.848 0 1 1 5.442-5.442z"
+                    data-color="3"></path>
+                  <path fill="#ffffff"
+                    d="M124.44 30.855 95.678 59.62a3.848 3.848 0 1 1-5.442-5.442L119 25.413a3.848 3.848 0 1 1 5.442 5.442z"
+                    data-color="3"></path>
+                </g>
+              </svg>
+              <div class="md:ml-3 mt-2 md:mt-0">
+                <h2 class="text-gray-900 font-semibold text-lg tracking-tight">AttendNow Tech Solutions Private
+                  Limited</h2>
+              </div>
+            </div>
+            <div class="py-6 font-futuraMd text-gray-900 md:ml-14">
+              <h4 class="mb-2">
+                <a href="#" class="hover:text-gray-900 duration-75 ease-linear" title="Call Now"><span
+                    class="font-futuraBk font-semibold">Tel: </span>
+                  +91 90283 23769</a>
+              </h4>
+              <h4>
+                <a href="#" class="hover:text-gray-900 duration-75 ease-linear" title="Email Now">
+                  <span class="font-futuraBk font-semibold">Email:
+                  </span> info@attendnow.in</a>
+              </h4>
+            </div>
+            <div class="text-paraTextxl md:ml-14">
+              <a href="#" class="mr-2"><i class="fa-brands fa-square-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </div>
+
+          <div class="leftSide place-items-start sm:place-items-end mt-4 sm:mt-0">
+            <ul class="font-futuraMd">
+              <li class="text-gray-600 hover:text-gray-900 duration-100 ease-linear hover:underline">
+                <a href="#">Privacy Policy</a>
+              </li>
+              <li class="py-2 text-gray-600 hover:text-gray-900 duration-100 ease-linear hover:underline">
+                <a href="#">Terms & Conditions</a>
+              </li>
+              <li class="text-gray-600 hover:text-gray-900 duration-100 ease-linear hover:underline">
+                <a href="#">Refund Policy</a>
+              </li>
+              <li class="py-2 text-gray-600 hover:text-gray-900 duration-100 ease-linear hover:underline">
+                <a href="#">Shipping Policy</a>
+              </li>
+
+              <div class="block md:flex mt-4">
+                <img class="mr-5 mb-2 md:mb-0 cursor-pointer"
+                  src="https://static.wixstatic.com/media/84770f_eb358dba3c764099b17fd5241d42c715~mv2.png/v1/fill/w_137,h_41,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Download_on_the_App_Store_Badge.png"
+                  alt="">
+                <img class="cursor-pointer"
+                  src="https://static.wixstatic.com/media/84770f_75b1345329464348876e3c99f0c1833f~mv2.png/v1/fill/w_140,h_41,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Google_Play_Store_badge_EN.png"
+                  alt="">
+              </div>
+            </ul>
+          </div>
+        </div>
+
+        <div class="place-items-center pt-4">
+          <p class="text-paraTextmd font-futuraMd font-normal text-center">© 2024 by AttendNow Tech Solutions Private
+            Limited.</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>
