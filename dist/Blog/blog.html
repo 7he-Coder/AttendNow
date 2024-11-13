@@ -19,7 +19,8 @@
     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <link href="dist/hamburgers.css" rel="stylesheet">
+  <!-- global css  -->
+  <link rel="stylesheet" href="../global.css">
 </head>
 
 <body class="font-futura">
@@ -28,33 +29,36 @@
     <!-- =======================
     *** Header/Navbar Section ***
     ======================== -->
-    <header class="w-full h-[97px] sticky top-0 left-0 z-[9999999] drop-shadow-lg bg-headerBgcolor">
+    <header id="home" class="w-full h-[97px] sticky top-0 left-0 z-[9999999] drop-shadow-lg bg-headerBgcolor">
       <div
         class="w-full xl:max-w-7xl 2xl:max-w-full mx-auto py-2 px-4 md:px-8 2xl:px-10 flex justify-between items-center">
         <div class="logo flex items-center justify-start cursor-pointer">
-          <div>
-            <svg preserveAspectRatio="xMidYMid meet" data-bbox="0 0 142 85" viewBox="0 0 142 85" height="85" width="70"
-              xmlns="http://www.w3.org/2000/svg" data-type="color" role="img" aria-label="AttendNow">
-              <g>
-                <path fill="#4329ba"
-                  d="M86 42.5C86 65.972 66.748 85 43 85S0 65.972 0 42.5 19.252 0 43 0s43 19.028 43 42.5z"
-                  data-color="1"></path>
-                <path fill="#ac3cf7"
-                  d="M142 42.298c0 23.36-18.937 42.298-42.298 42.298-23.36 0-42.298-18.937-42.298-42.298C57.404 18.938 76.341 0 99.702 0 123.062 0 142 18.937 142 42.298z"
-                  data-color="2"></path>
-                <path fill="#ffffff"
-                  d="M81.404 39.968 95.656 54.22a3.848 3.848 0 1 1-5.442 5.442L75.963 45.41a3.848 3.848 0 1 1 5.442-5.442z"
-                  data-color="3"></path>
-                <path fill="#ffffff"
-                  d="M124.44 30.855 95.678 59.62a3.848 3.848 0 1 1-5.442-5.442L119 25.413a3.848 3.848 0 1 1 5.442 5.442z"
-                  data-color="3"></path>
-              </g>
-            </svg>
-          </div>
-          <div class="text-paraTextxl ml-3">
-            <h2 class="text-white font-futuraBk text-xl md:text-2xl tracking-wide"><a href="../app.html">AttendNow</a>
-            </h2>
-          </div>
+          <a href="../index.html">
+            <div>
+              <svg preserveAspectRatio="xMidYMid meet" data-bbox="0 0 142 85" viewBox="0 0 142 85" height="85"
+                width="70" xmlns="http://www.w3.org/2000/svg" data-type="color" role="img" aria-label="AttendNow">
+                <g>
+                  <path fill="#4329ba"
+                    d="M86 42.5C86 65.972 66.748 85 43 85S0 65.972 0 42.5 19.252 0 43 0s43 19.028 43 42.5z"
+                    data-color="1"></path>
+                  <path fill="#ac3cf7"
+                    d="M142 42.298c0 23.36-18.937 42.298-42.298 42.298-23.36 0-42.298-18.937-42.298-42.298C57.404 18.938 76.341 0 99.702 0 123.062 0 142 18.937 142 42.298z"
+                    data-color="2"></path>
+                  <path fill="#ffffff"
+                    d="M81.404 39.968 95.656 54.22a3.848 3.848 0 1 1-5.442 5.442L75.963 45.41a3.848 3.848 0 1 1 5.442-5.442z"
+                    data-color="3"></path>
+                  <path fill="#ffffff"
+                    d="M124.44 30.855 95.678 59.62a3.848 3.848 0 1 1-5.442-5.442L119 25.413a3.848 3.848 0 1 1 5.442 5.442z"
+                    data-color="3"></path>
+                </g>
+              </svg>
+            </div>
+            <div class="text-paraTextxl ml-3">
+              <h2 class="text-white font-futuraBk text-xl md:text-2xl tracking-wide"><a
+                  href="../index.html">AttendNow</a>
+              </h2>
+            </div>
+          </a>
         </div>
 
         <nav class="flex items-center justify-center">
@@ -62,38 +66,38 @@
             <div class="flex items-center justify-center">
               <ul
                 class="navbar mr-16 lg:mr-4 min-[1285px]:mr-16 flex text-white min-[1024px]:text-base min-[1040px]:text-paraTextmd min-[1070px]:text-lg font-futuraBk font-medium tracking-tight place-items-center">
-                <li
-                  class="navList py-4 px-2 mx-[.1rem] xl:mx-[.55rem] hover:text-gray-300 duration-150 ease-linear cursor-pointer">
-                  <a href="https://replit.com/@Abhaykumar167" class="navItem" target="_blank">Home</a>
+                <li class="navList ">
+                  <a class="navItem py-4 px-2 mx-[.1rem] xl:mx-[.55rem] hover:text-gray-300 duration-150 ease-linear cursor-pointer"
+                    href="https://github.com/7he-Coder/AttendNow" target="_blank">Home</a>
                 </li>
-                <li
-                  class="navList py-4 px-2 mx-[.1rem] xl:mx-[.55rem] hover:text-gray-300 duration-150 ease-linear cursor-pointer text-center">
-                  <a href="" class="navItem">Why AttendNow</a>
+                <li class="navList">
+                  <a class="navItem py-4 px-2 mx-[.1rem] xl:mx-[.55rem] hover:text-gray-300 duration-150 ease-linear cursor-pointer text-center"
+                    href="#attendNow">Why AttendNow</a>
                 </li>
-                <li
-                  class="navList py-4 px-2 mx-[.1rem] xl:mx-[.55rem] hover:text-gray-300 duration-150 ease-linear cursor-pointer">
-                  <a href="" class="navItem">Benefits</a>
+                <li class="navList">
+                  <a class="navItem py-4 px-2 mx-[.1rem] xl:mx-[.55rem] hover:text-gray-300 duration-150 ease-linear cursor-pointer"
+                    href="#benefit">Benefits</a>
                 </li>
-                <li
-                  class="navList py-4 px-2 mx-[.1rem] xl:mx-[.55rem] hover:text-gray-300 duration-150 ease-linear cursor-pointer">
-                  <a href="" class="navItem">Reviews</a>
+                <li class="navList">
+                  <a class="navItem py-4 px-2 mx-[.1rem] xl:mx-[.55rem] hover:text-gray-300 duration-150 ease-linear cursor-pointer"
+                    href="#review">Reviews</a>
                 </li>
-                <li
-                  class="navList py-4 px-2 mx-[.1rem] xl:mx-[.55rem] hover:text-gray-300 duration-150 ease-linear cursor-pointer">
-                  <a href="" class="navItem">Pricing</a>
+                <li class="navList">
+                  <a class="navItem py-4 px-2 mx-[.1rem] xl:mx-[.55rem] hover:text-gray-300 duration-150 ease-linear cursor-pointer"
+                    href="#price">Pricing</a>
                 </li>
-                <li
-                  class="navList py-4 px-2 mx-[.1rem] xl:mx-[.55rem] hover:text-gray-300 duration-150 ease-linear cursor-pointer">
-                  <a href="#" class="navItem">Blog</a>
+                <li class="navList">
+                  <a class="navItem py-4 px-2 mx-[.1rem] xl:mx-[.55rem] hover:text-gray-300 duration-150 ease-linear cursor-pointer"
+                    href="#">Blog</a>
                 </li>
-                <li
-                  class="navList py-4 px-2 mx-[.1rem] xl:mx-[.55rem] hover:text-gray-300 duration-150 ease-linear cursor-pointer text-center">
-                  <a href="../app.html" class="navItem ">Request
+                <li class="navList">
+                  <a class="navItem py-4 px-2 mx-[.1rem] xl:mx-[.55rem] hover:text-gray-300 duration-150 ease-linear cursor-pointer text-center"
+                    href="../ReqADemo/reqaDemo.html">Request
                     a Demo</a>
                 </li>
-                <li
-                  class="navList py-4 lg:text-center mx-[.55rem] hover:text-gray-300 duration-150 ease-linear cursor-pointer">
-                  <a href="" class="navItem">Login</a>
+                <li class="navList">
+                  <a class="navItem py-4 lg:text-center mx-[.55rem] hover:text-gray-300 duration-150 ease-linear cursor-pointer"
+                    href="../LogIn/login.html">Login</a>
                 </li>
               </ul>
               <form
@@ -130,14 +134,68 @@
               </form>
             </div>
           </div>
+        </nav>
 
-          <!-- *** drop down menu *** -->
-          <div class="block lg:hidden">
-            <div class="text-3xl text-white">
-              <i class="fa-solid fa-bars"></i>
+        <!-- mobile menus -->
+        <div id="navbarSlide"
+          class="w-full h-screen absolute top-24 left-0 bg-[#ffffffa9] backdrop-blur-xl overflow-hidden hidden">
+          <div class="max-w-max h-full bg-headerBgcolor absolute z-50 border-t border-t-lightPurple border-opacity-50">
+            <div class="size-full grid px-6 gap-y-8">
+              <ul 3.2
+                class="navigation mt-8 grid gap-y-2 items-start *:text-white [&_li:hover]:rounded-sm [&_li:hover]:bg-gray-50 [&_li:hover]:text-headerBgcolor [&_li:hover]:transition *:px-4 *:py-2 w-full h-auto [&_a]:font-futuraMd *:cursor-pointer">
+                <li class="navList"><a href="https://github.com/7he -Coder" target="_blank">Home</a></li>
+                <li class="navList"><a href="#attendNow">Why AttendNow</a></li>
+                <li class="navList"><a href="#benefit">Benefits</a></li>
+                <li class="navList"><a href="#review">Reviews</a></li>
+                <li class="navList"><a href="#price">Pricing</a></li>
+                <li class="navList"><a href="./Blog/blog.html">Blog</a></li>
+                <li class="navList"><a href="./ReqADemo/reqaDemo.html">Requesta Demo</a></li>
+                <li class="navList"><a href="./LogIn/login.html" target="_blank">Login</a></li>
+              </ul>
+
+              <div>
+                <form
+                  class="group w-full h-auto outline-none font-futuraBk rounded-full inline-flex items-center justify-center bg-heroGradient">
+                  <select id="dropdownDividerButton"
+                    class="py-2 px-8 rounded-full bg-heroGradient bg-countryBtn text-white text-base outline-none border-none cursor-pointer appearance-none"
+                    data-dropdown-toggle="dropdownDivider">
+                    <option value="English">English</option>
+                    <option value="العربية">العربية</option>
+                    <option value="বাংলা">বাংলা</option>
+                    <option value="Español">Español</option>
+                    <option value="Français">Français</option>
+                    <option value="ગુજરાતી">ગુજરાતી</option>
+                    <option value="हिन्दी">हिन्दी</option>
+                    <option value="ಕನ್ನಡ">ಕನ್ನಡ</option>
+                    <option value="മലയാളം">മലയാളം</option>
+                    <option value="मराठी">मराठी</option>
+                    <option value="ਪੰਜਾਬੀ">ਪੰਜਾਬੀ</option>
+                    <option value="Português">Português</option>
+                    <option value="Русский">Русский</option>
+                    <option value="தமிழ்">தமிழ்</option>
+                    <option value="తెలుగు">తెలుగు</option>
+                    <option value="اردو">اردو</option>
+                  </select>
+                  <span class="px-4 duration-500 ease-in-out group-hover:rotate-180">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-[16px] h-[16px] fill-white">
+                      <path
+                        d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
+                    </svg>
+                  </span>
+                </form>
+              </div>
             </div>
           </div>
-        </nav>
+        </div>
+
+        <!-- *** hamburger *** -->
+        <button id="hamburger"
+          class="group lg:hidden bg-transparent grid gap-1.5 *:transition *:duration-500 *:ease-in-out place-items-end transition duration-300 ease-in">
+          <span class="line line1 "></span>
+          <span class="line line2 "></span>
+          <span class="line line3 "></span>
+        </button>
+
       </div>
     </header>
 
@@ -153,7 +211,7 @@
           class="w-full h-auto font-futuraBk max-w-max fixed md:absolute left-0 bottom-3 md:bottom-16 text-paraTextxl">
           <h6 class="size-full">
             <a class="text-white flex items-center justify-center bg-black font-semibold p-4 rounded-r-xl hover:ring ring-lightPurple transition-all animate-bounce"
-              href="../app.html">
+              href="../index.html">
               <span class="hidden md:block">Back to Home</span>
               <i class="fa-solid fa-house text-lightPurple ml-0 md:ml-4"></i>
             </a>
