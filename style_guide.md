@@ -99,3 +99,96 @@ d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.
                 d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z" />
             </svg>
           </div>
+
+ <!-- grid gap-4 place-items-center justify-stretch shrink-0 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5 -->
+<!-- <span class="border-b bg-heroGradient p-[1px] w-[8%]"></span> flex flex-col-->
+
+      <div class="mb-10 place-items-center">
+        <h2 class="text-paraTextmd md:text-xl font-semibold font-futuraBk">OUR CLIENTS</h2>
+      </div>
+
+ <div class="w-full max-w-max mx-auto block md:flex">
+          <div class="box-1 w-full max-w-[346px] mx-auto md:mx-8 h-max px-6 py-5 shadow-2xl bg-white rounded-[2.5rem]">
+
+            <div class="">
+              <i class="fa-solid fa-quote-left text-[#9757bf] text-5xl"></i>
+            </div>
+
+            <p class="text-lg py-5 leading-loose font-futuraMd text-gray-500">
+              After comparing various apps, keeping in mind a variety of semi-smart phones, we implemented it across 14
+              very remote schools in the foothills of the Himalayas in Uttarakhand. Issues are intermittent cell
+              connections, poor signal strength and widely scattered locations. This app stores it's reporting data and
+              transmits automatically when sensing a connection. Geo-fencing based on job type etc. is excellent. After
+              one year, we have no reason to change. NO, it is not free, but an excellent app.
+            </p>
+
+            <div class="">
+              <h4 class="font-semibold tracking-tighter">Peter Tower</h4>
+              <div class="size-full mt-2">
+                <i class="fa-solid fa-star text-[#9757bf]"></i>
+                <i class="fa-solid fa-star text-[#9757bf]"></i>
+                <i class="fa-solid fa-star text-[#9757bf]"></i>
+                <i class="fa-solid fa-star text-[#9757bf]"></i>
+                <i class="fa-solid fa-star text-[#9757bf]"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="w-full max-w-max mx-auto block mt-8 md:mt-0 xl:flex">
+            <div
+              class="box-1 w-full max-w-[346px] mx-auto mr-0 lg:mr-8 h-max px-6 py-5 shadow-2xl bg-white rounded-[2.5rem]">
+
+              <div class="">
+                <i class="fa-solid fa-quote-left text-[#9757bf] text-5xl"></i>
+              </div>
+
+              <p class="text-lg py-5 leading-loose font-futuraMd text-gray-500">
+                Excellent performance application for all employees
+              </p>
+
+              <div class="">
+                <h4 class="font-semibold tracking-tighter">Amit Singh</h4>
+                <div class="size-full mt-2">
+                  <i class="fa-solid fa-star text-[#9757bf]"></i>
+                  <i class="fa-solid fa-star text-[#9757bf]"></i>
+                  <i class="fa-solid fa-star text-[#9757bf]"></i>
+                  <i class="fa-solid fa-star text-[#9757bf]"></i>
+                  <i class="fa-solid fa-star text-[#9757bf]"></i>
+                </div>
+              </div>
+            </div>
+            <div
+              class="box-1 w-full max-w-[346px] h-max mx-auto xl:mt-0 mt-8 px-6 py-5 shadow-2xl bg-white rounded-[2.5rem]">
+
+              <div class="">
+                <i class="fa-solid fa-quote-left text-[#9757bf] text-5xl"></i>
+              </div>
+
+              <p class="text-lg py-5 leading-loose font-futuraMd text-gray-500">
+                The app is easy to access and also cost effect. The backend support is great. Go for it.
+              </p>
+
+              <div class="">
+                <h4 class="font-semibold tracking-tighter">Sunil Shinde</h4>
+                <div class="size-full mt-2">
+                  <i class="fa-solid fa-star text-[#9757bf]"></i>
+                  <i class="fa-solid fa-star text-[#9757bf]"></i>
+                  <i class="fa-solid fa-star text-[#9757bf]"></i>
+                  <i class="fa-solid fa-star text-[#9757bf]"></i>
+                  <i class="fa-solid fa-star text-[#9757bf]"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+  <div class="block md:flex mt-4">
+                <img class="mr-5 mb-2 md:mb-0 cursor-pointer" src="./assets/Btn_Google_Play_Store_badge_EN.png"
+                  loading="lazy" alt="...">
+                <img class="cursor-pointer" src="./assets/Btn_App_Store_Badge.png" loading="lazy" alt="...">
+              </div>
+ <div class="block sm:flex">
+              <img class="mr-5 mb-2 sm:mb-0 cursor-pointer" src="./assets/Btn_Google_Play_Store_badge_EN.png"
+                loading="lazy" alt="...">
+              <img class="cursor-pointer" src="./assets/Btn_App_Store_Badge.png" loading="lazy" alt="...">
+            </div>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <title>Image Slider</title>
+</head>
+
+<body class="bg-gray-100 flex items-center justify-center h-screen">
+
+  <div class="relative w-full max-w-lg overflow-hidden rounded-lg">
+    <div id="slider" class="flex transition-transform duration-300">
+      <img src="https://via.placeholder.com/600x400?text=Slide+1" alt="Slide 1" class="w-full">
+      <img src="https://via.placeholder.com/600x400?text=Slide+2" alt="Slide 2" class="w-full">
+      <img src="https://via.placeholder.com/600x400?text=Slide+3" alt="Slide 3" class="w-full">
+    </div>
+    <button id="prev" class="absolute top-1/2 left-0 transform -translate-y-1/2 bg-white rounded-full p-2 shadow-lg">
+      &#10094;
+    </button>
+    <button id="next" class="absolute top-1/2 right-0 transform -translate-y-1/2 bg-white rounded-full p-2 shadow-lg">
+      &#10095;
+
+    </button>
+  </div>
+
+  <script>
+    const slider = document.getElementById('slider');
+    const prevButton = document.getElementById('prev');
+    const nextButton = document.getElementById('next');
+
+    let index = 0;
+    const slides = slider.children;
+
+    function updateSlider() {
+      const totalSlides = slides.length;
+      const offset = -index * 100; // Each slide takes 100% of width
+      slider.style.transform = `translateX(${offset}%)`;
+    }
+
+    prevButton.addEventListener('click', () => {
+      index = (index > 0) ? index - 1 : slides.length - 1;
+      updateSlider();
+    });
+
+    nextButton.addEventListener('click', () => {
+      index = (index < slides.length - 1) ? index + 1 : 0;
+      updateSlider();
+    });
+  </script>
+
+</body>
+
+</html>

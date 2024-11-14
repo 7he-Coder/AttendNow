@@ -9,9 +9,10 @@ module.exports = {
         'lightPurple': '#ac3cf7',
         'darkBlue': '#4329ba',
         'heroBtn': '#7c69ba',
-        'aboutPrice': '#e8e6e6',
+        'aboutPrice': '#f1f1f3',
         'priceBg': '##c7c7c7',
         'priceBtncolor': '#911dff',
+        'primeColor': '#9757bf'
       },
       fontSize: {
         'paraTextmd': '17px',

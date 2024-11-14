@@ -64,7 +64,7 @@
           <div class="hidden lg:block">
             <div class="flex items-center justify-between">
               <ul
-                class="navigation mr-16 flex font-futuraBk tracking-tighter text-white [&_a:hover]:text-gray-300 lg:mr-4 min-[1285px]:mr-16 min-[1024px]:text-base min-[1040px]:text-paraTextmd min-[1070px]:text-lg gap-4 xl:gap-8">
+                class="navigation mr-16 flex font-futuraBk *:2xl:text-xl tracking-tighter text-white [&_a:hover]:text-gray-300 lg:mr-4 min-[1285px]:mr-16 *:min-[1024px]:text-base *:min-[1040px]:text-paraTextmd *:min-[1070px]:text-lg gap-4 xl:gap-8">
                 <li><a href="#">Home</a></li>
                 <li><a href="#attendNow">Why AttendNow</a></li>
                 <li><a href="#benefit">Benefits</a></li>
@@ -179,7 +179,7 @@
     ======================== -->
     <main class="bg-heroGradient">
       <div
-        class="w-full xl:max-w-7xl mx-auto py-28 px-6 md:px-16 block lg:flex md:flex-row-reverse items-center justify-between">
+        class="w-full xl:max-w-7xl mx-auto py-20 px-6 md:px-16 2xl:px-0 block lg:flex md:flex-row-reverse items-center justify-between">
         <!-- Right Side -->
         <div class="lg:mb-0 mb-14">
           <center>
@@ -189,33 +189,45 @@
 
         <!-- Left Side -->
         <div class="place-items-center">
-          <div class="lg:max-w-2xl mx-auto">
-            <h1 class="text-6xl text-pretty text-white font-futuraBk leading-tight">
+          <div class="place-items-center lg:place-items-start text-center lg:text-start lg:max-w-2xl mx-auto">
+            <h1 class="w-full text-6xl text-pretty text-white font-futuraMd leading-none md:leading-tight">
               Attendance simplified, anywhere anytime
             </h1>
-            <div class="tracking-wide px-8 md:px-12 mb-6 py-10">
-              <ul class="text-white text-2xl font-futuraLg list-disc">
-                <li>Mark Attendance with Geotagging</li>
-                <li class="py-2">Location Tracking</li>
-                <li>Geofencing</li>
-                <li class="py-2">Leave Management</li>
-                <li>Multi-lingual</li>
+            <div class="tracking-wide px-8 mb-6 py-10">
+              <ul
+                class="text-white text-2xl font-futuraLg [&_li]:flex [&_li]:items-center [&_li]:justify-center lg:[&_li]:justify-start lg:[&_li]:text-start [&_li]:py-3 [&_img]:size-6 [&_img]:mr-3 [&_img]:hidden lg:[&_img]:block">
+                <li>
+                  <img src="./assets/list_img.webp" loading="lazy" alt="..list_image...">
+                  <p>Mark Attendance with Geotagging</p>
+                </li>
+                <li class="py-2">
+                  <img src="./assets/list_img.webp" loading="lazy" alt="..list_image...">
+                  <p>Location Tracking</p>
+                </li>
+                <li>
+                  <img src="./assets/list_img.webp" loading="lazy" alt="..list_image...">
+                  <p>Geofencing</p>
+                </li>
+                <li class="py-2">
+                  <img src="./assets/list_img.webp" loading="lazy" alt="..list_image...">
+                  <p>Leave Management</p>
+                </li>
+                <li>
+                  <img src="./assets/list_img.webp" loading="lazy" alt="..list_image...">
+                  <p>Multi-lingual</p>
+                </li>
               </ul>
             </div>
             <div class="w-full">
-              <a class="px-14 py-3 font-sans text-xl tracking-tight rounded-full hover:bg-heroGradient duration-200 ease-linear border-2 border-white text-white hover:text-white  bg-heroBtn"
+              <a class="px-14 py-3 font-sans text-xl tracking-tight rounded-full duration-200 ease-linear border-2 border-white text-white bg-priceBtncolor hover:bg-white hover:text-priceBtncolor"
                 href="./ReqADemo/reqaDemo.html">Request a Demo</a>
             </div>
 
-            <div class="text-white py-4 mt-6">
+            <div class="text-white py-8 mt-4">
               <span class="text-2xl">Try it yourself. Download now.</span>
             </div>
 
-            <div class="block sm:flex">
-              <img class="mr-5 mb-2 sm:mb-0 cursor-pointer" src="./assets/Btn_Google_Play_Store_badge_EN.png"
-                loading="lazy" alt="...">
-              <img class="cursor-pointer" src="./assets/Btn_App_Store_Badge.png" loading="lazy" alt="...">
-            </div>
+
           </div>
         </div>
     </main>
@@ -223,28 +235,14 @@
     <!-- =======================
     *** Branding Section ***
     ======================== -->
-    <section class="w-full xl:max-w-7xl mx-auto py-16 px-6 md:px-16">
-      <div class="mb-10 place-items-center">
-        <h2 class="text-xl font-futuraBk">OUR CLIENTS</h2>
-        <!-- <span class="border-b bg-heroGradient p-[1px] w-[8%]"></span> flex flex-col-->
-      </div>
-
-      <div class="flex justify-between items-center">
-        <div class="imgs mix-blend-color-burn">
-          <img src="./assets/clients_images/img-1.jpg" alt="">
-        </div>
-        <div class="imgs mix-blend-color-burn">
-          <img src="./assets/clients_images/img-2.jpg" alt="">
-        </div>
-        <div class="imgs mix-blend-color-burn">
-          <img src="./assets/clients_images/img-3.jpg" alt="">
-        </div>
-        <div class="imgs mix-blend-color-burn">
-          <img src="./assets/clients_images/img-4.jpg" alt="">
-        </div>
-        <div class="imgs mix-blend-color-burn">
-          <img src="./assets/clients_images/img-5.jpg" alt="">
-        </div>
+    <section class="w-full xl:max-w-7xl mx-auto py-16 px-6 md:px-16  2xl:px-0">
+      <div
+        class="overflow-auto gap-8 [&_img]:grayscale [&_img:hover]:grayscale-0 *:cursor-pointer place-items-center justify-items-center flex justify-center items-center xl:justify-between flex-wrap flex-grow *:mix-blend-color-burn">
+        <div><img src="./assets/clients_images/img-1.jpg" loading="lazy" alt="brand"></div>
+        <div><img src="./assets/clients_images/img-2.jpg" loading="lazy" alt="brand"></div>
+        <div><img src="./assets/clients_images/img-3.jpg" loading="lazy" alt="brand"></div>
+        <div><img src="./assets/clients_images/img-4.jpg" loading="lazy" alt="brand"></div>
+        <div><img src="./assets/clients_images/img-5.jpg" loading="lazy" alt="brand"></div>
       </div>
     </section>
 
@@ -252,20 +250,32 @@
     *** About Section ***
     ======================== -->
     <section id="attendNow" class="bg-aboutPrice">
-      <div class="w-full xl:max-w-7xl mx-auto py-28 px-6 md:px-16 block md:flex justify-between items-center">
-        <h1
-          class="size-full md:w-[482px] md:h-auto mb-8 md:mb-0 font-futuraBk text-4xl md:text-5xl md:leading-snug lg:leading-normal text-pretty md:text-balance">
-          Reinventing Employee Attendance with Location Tracking
-        </h1>
+      <div
+        class="w-full xl:max-w-7xl mx-auto py-28 px-6 md:px-16 2xl:px-0 block xl:flex justify-between items-center place-items-center *:size-fit">
+        <div class="image xl:w-full">
+          <img class="w-[600px]" src="./assets/about.png" loading="lazy" alt="about...">
+        </div>
+        <div class="place-items-center">
+          <div class="block text-center md:text-start md:flex md:place-items-end xl:place-items-start">
+            <h1
+              class="size-full sm:w-[450px] place-items-center md:w-[482px] md:h-auto my-8 md:my-0 py-8 font-futuraBk text-4xl md:text-5xl md:leading-tight lg:leading-snug md:text-balance">
+              Reinventing Employee Attendance with Location Tracking
+            </h1>
+            <div class="shrink-0">
+              <img class="hidden md:block max-w-max w-[160px] rotate-12" src="./assets/about2.png" loading="lazy"
+                alt="about2...">
+            </div>
+          </div>
 
-        <p class="text-lg font-futuraMd text-gray-700 font-semibold tracking-wider text-start md:text-justify leading-loose 
-          w-full h-auto md:w-[600px]">
-          With GPS technology, employers can track their employees in real-time, identify their location, monitor
-          their movement, and track their arrival and departure times from any location. GPS technology can also be
-          used to generate automatic attendance records, determine if employees are taking the most effective route to
-          their destination, and ensure their safety while on the job. AttendNow provides all of the above even when
-          the users have poor or no network and integrates with payroll and leave management.
-        </p>
+          <p class="text-lg font-futuraMd text-gray-700 font-semibold tracking-wider text-center sm:text-start md:text-justify leading-loose 
+          w-full h-auto sm:w-[550px] md:w-[600px] md:ml-12 overflow-auto">
+            With GPS technology, employers can track their employees in real-time, identify their location, monitor
+            their movement, and track their arrival and departure times from any location. GPS technology can also be
+            used to generate automatic attendance records, determine if employees are taking the most effective route to
+            their destination, and ensure their safety while on the job. AttendNow provides all of the above even when
+            the users have poor or no network and integrates with payroll and leave management.
+          </p>
+        </div>
       </div>
     </section>
 
@@ -273,10 +283,13 @@
     *** Benefits Section ***
     ======================== -->
     <section id="benefit" style="background: url('./assets/bg.jpg') no-repeat center center/cover">
-      <div class="w-full xl:max-w-7xl mx-auto py-16 px-6 md:px-16">
+      <div class="w-full xl:max-w-7xl mx-auto py-24 px-6 md:px-16 xl:px-0">
         <div class="mb-24 text-center max-w-md mx-auto">
-          <h1 class="text-4xl md:text-5xl text-white leading-snug font-light">
-            How AttendNow can help your business</h1>
+          <h2 class="text-4xl md:text-5xl text-white leading-none md:leading-snug font-light">
+            How AttendNow can help your business</h2>
+          <p class="mt-4 text-lg text-center leading-tight font-futuraBk text-gray-100">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed non tenetur nihil quibusdam temporas.
+          </p>
         </div>
 
         <!-- boxes -->
@@ -389,98 +402,109 @@
     ***  Reviews Section ***
     ======================== -->
     <section id="review">
-      <div class="w-full xl:max-w-7xl mx-auto py-16 px-6 md:px-16">
+      <div class="w-full xl:max-w-7xl mx-auto py-24 px-6 md:px-16">
         <div class="mb-24 text-center max-w-md mx-auto">
-          <h2 class="text-4xl md:text-5xl text- leading-snug font-light">Satisfied Customers</h2>
+          <h2 class="text-4xl md:text-5xl text- leading-snug font-futuraBk">Satisfied Customers</h2>
+          <p class="mt-4 text-lg text-center leading-tight font-futuraBk text-gray-500">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed non tenetur nihil quibusdam temporas.
+          </p>
         </div>
 
-        <div class="w-full max-w-max mx-auto block md:flex">
-          <div class="box-1 w-full max-w-[346px] mx-auto md:mx-8 h-max px-6 py-5 shadow-2xl bg-white rounded-[2.5rem]">
+        <div class="w-full mx-auto block md:flex flex-grow flex-wrap items-center justify-between gap-10 cursor-grab">
+          <div
+            class="box-1 w-full relative max-w-[346px] h-max mx-auto xl:mt-0 mt-8 px-6 py-5 shadow-2xl bg-white rounded-[2.5rem]">
 
-            <div class="">
+            <div class="size-fit py-5">
               <i class="fa-solid fa-quote-left text-[#9757bf] text-5xl"></i>
-            </div>
-
-            <p class="text-lg py-5 leading-loose font-futuraMd text-gray-500">
-              After comparing various apps, keeping in mind a variety of semi-smart phones, we implemented it across 14
-              very remote schools in the foothills of the Himalayas in Uttarakhand. Issues are intermittent cell
-              connections, poor signal strength and widely scattered locations. This app stores it's reporting data and
-              transmits automatically when sensing a connection. Geo-fencing based on job type etc. is excellent. After
-              one year, we have no reason to change. NO, it is not free, but an excellent app.
-            </p>
-
-            <div class="">
-              <h4 class="font-semibold tracking-tighter">Peter Tower</h4>
-              <div class="size-full mt-2">
-                <i class="fa-solid fa-star text-[#9757bf]"></i>
-                <i class="fa-solid fa-star text-[#9757bf]"></i>
-                <i class="fa-solid fa-star text-[#9757bf]"></i>
-                <i class="fa-solid fa-star text-[#9757bf]"></i>
-                <i class="fa-solid fa-star text-[#9757bf]"></i>
-              </div>
-            </div>
-          </div>
-
-          <div class="w-full max-w-max mx-auto block mt-8 md:mt-0 xl:flex">
-            <div
-              class="box-1 w-full max-w-[346px] mx-auto mr-0 lg:mr-8 h-max px-6 py-5 shadow-2xl bg-white rounded-[2.5rem]">
-
-              <div class="">
-                <i class="fa-solid fa-quote-left text-[#9757bf] text-5xl"></i>
-              </div>
-
-              <p class="text-lg py-5 leading-loose font-futuraMd text-gray-500">
-                Excellent performance application for all employees
-              </p>
-
-              <div class="">
-                <h4 class="font-semibold tracking-tighter">Amit Singh</h4>
-                <div class="size-full mt-2">
-                  <i class="fa-solid fa-star text-[#9757bf]"></i>
-                  <i class="fa-solid fa-star text-[#9757bf]"></i>
-                  <i class="fa-solid fa-star text-[#9757bf]"></i>
-                  <i class="fa-solid fa-star text-[#9757bf]"></i>
-                  <i class="fa-solid fa-star text-[#9757bf]"></i>
-                </div>
-              </div>
-            </div>
-            <div
-              class="box-1 w-full max-w-[346px] h-max mx-auto xl:mt-0 mt-8 px-6 py-5 shadow-2xl bg-white rounded-[2.5rem]">
-
-              <div class="">
-                <i class="fa-solid fa-quote-left text-[#9757bf] text-5xl"></i>
-              </div>
-
-              <p class="text-lg py-5 leading-loose font-futuraMd text-gray-500">
+              <p class="text-lg text-center leading-loose font-futuraMd text-gray-500">
                 The app is easy to access and also cost effect. The backend support is great. Go for it.
               </p>
-
-              <div class="">
+            </div>
+            <div class="place-content-center [&>div]:place-items-center py-4">
+              <div class="profileImg">
+                <img class="size-14 aspect-square object-cover rounded-full ring-2 ring-[#9757bf] drop-shadow-sm"
+                  src="./assets/profile_1.jpg" loading="lazy" alt="profile...">
+              </div>
+              <div class="profileText py-3">
                 <h4 class="font-semibold tracking-tighter">Sunil Shinde</h4>
-                <div class="size-full mt-2">
-                  <i class="fa-solid fa-star text-[#9757bf]"></i>
-                  <i class="fa-solid fa-star text-[#9757bf]"></i>
-                  <i class="fa-solid fa-star text-[#9757bf]"></i>
-                  <i class="fa-solid fa-star text-[#9757bf]"></i>
-                  <i class="fa-solid fa-star text-[#9757bf]"></i>
-                </div>
+              </div>
+              <div class="text-center [&_i]:text-[#9757bf]">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div
+            class="box-1 w-full relative max-w-[346px] h-max mx-auto xl:mt-0 mt-8 px-6 py-5 shadow-2xl bg-white rounded-[2.5rem]">
+
+            <div class="size-fit py-5">
+              <i class="fa-solid fa-quote-left text-[#9757bf] text-5xl"></i>
+              <p class="text-lg text-center leading-loose font-futuraMd text-gray-500">
+                The app is easy to access and also cost effect. The backend support is great. Go for it.
+              </p>
+            </div>
+            <div class="place-content-center [&>div]:place-items-center py-4">
+              <div class="profileImg">
+                <img class="size-14 aspect-square object-cover rounded-full ring-2 ring-[#9757bf] drop-shadow-sm"
+                  src="./assets/profile_2.jpg" loading="lazy" alt="profile...">
+              </div>
+              <div class="profileText py-3">
+                <h4 class="font-semibold tracking-tighter">Sunil Shinde</h4>
+              </div>
+              <div class="text-center [&_i]:text-[#9757bf]">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div
+            class="box-1 w-full relative max-w-[346px] h-max mx-auto xl:mt-0 mt-8 px-6 py-5 shadow-2xl bg-white rounded-[2.5rem]">
+
+            <div class="size-fit py-5">
+              <i class="fa-solid fa-quote-left text-[#9757bf] text-5xl"></i>
+              <p class="text-lg text-center leading-loose font-futuraMd text-gray-500">
+                The app is easy to access and also cost effect. The backend support is great. Go for it.
+              </p>
+            </div>
+            <div class="place-content-center [&>div]:place-items-center py-4">
+              <div class="profileImg">
+                <img class="size-14 aspect-square object-cover rounded-full ring-2 ring-[#9757bf] drop-shadow-sm"
+                  src="./assets/profile_3.jpg" loading="lazy" alt="profile...">
+              </div>
+              <div class="profileText py-3">
+                <h4 class="font-semibold tracking-tighter">Sunil Shinde</h4>
+              </div>
+              <div class="text-center [&_i]:text-[#9757bf]">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
               </div>
             </div>
           </div>
         </div>
-      </div>
     </section>
 
     <!-- =======================
     ***  Pricing Section ***
     ======================== -->
     <section id="price" class="bg-aboutPrice">
-      <div class="justify-items-center w-full xl:max-w-7xl mx-auto py-16 px-6 md:px-16 ">
+      <div class="justify-items-center w-full xl:max-w-7xl mx-auto py-24 px-6 md:px-16 ">
         <div class="mb-24 text-center max-w-md mx-auto">
-          <h2 class="text-5xl md:text-5xl text- leading-snug font-light">Pricing Plans</h2>
+          <h2 class="text-5xl md:text-5xl text- leading-snug font-futuraBk">Pricing Plans</h2>
+          <p class="mt-4 text-lg text-center leading-tight font-futuraBk text-gray-500">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed non tenetur nihil quibusdam temporas.
+          </p>
         </div>
         <div
-          class=" w-full max-w-max mx-auto block mt-8 md:mt-0 md:grid grid-cols-1 md:grid-cols-2 lg:flex gap-x-6 place-items-center">
+          class=" w-full max-w-max mx-auto block mt-8 md:mt-0 md:grid grid-cols-1 md:grid-cols-2 lg:flex gap-x-6 place-items-center ">
           <div
             class="box-1 w-full max-w-[363px] m-6 xl:mx-8 h-max px-7 py-10 shadow-2xl font-futuraMd text-gray-500 rounded-md">
             <div class="text-center">
@@ -810,12 +834,6 @@
               <li class="py-2 text-gray-600 hover:text-gray-900 duration-100 ease-linear hover:underline">
                 <a href="#">Shipping Policy</a>
               </li>
-
-              <div class="block md:flex mt-4">
-                <img class="mr-5 mb-2 md:mb-0 cursor-pointer" src="./assets/Btn_Google_Play_Store_badge_EN.png"
-                  loading="lazy" alt="...">
-                <img class="cursor-pointer" src="./assets/Btn_Google_Play_Store_badge_EN.png" loading="lazy" alt="...">
-              </div>
             </ul>
           </div>
         </div>
