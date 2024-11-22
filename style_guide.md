@@ -192,3 +192,13 @@ d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.
                 loading="lazy" alt="...">
               <img class="cursor-pointer" src="./assets/Btn_App_Store_Badge.png" loading="lazy" alt="...">
             </div>
+<!-- Buttons -->
+            <div
+              class="w-full py-8 bg-red-500 h-auto flex justify-between items-center *:border-2 *:rounded-full *:bg-lightPurple *:size-12 *:ring *:ring-lightPurple *:text-white">
+              <button type="button" class="prev">
+                <i class="fa-solid fa-chevron-left"></i>
+              </button>
+              <button type="button" class="next sliderNavNext">
+                <i class="fa-solid fa-chevron-right"></i>
+              </button>
+            </div>
